@@ -43,11 +43,11 @@
             class = "container"
             >
             <div class="form-group col-md-8">
-                <label for="Title" class="col-form-label" id="titleText" data-id="" required>NAMA GAME</label>
+                <label for="Title" class="col-form-label" id="titleText" required>Game</label>
                 <input type="text" class="form-control" id="titleTextInput">
             </div>
             <div class="form-group col-md-8">
-                <label for="Title" class="col-form-label" id="descriptionText" data-id="" required>DESKRIPSI</label>
+                <label for="Title" class="col-form-label" id="descriptionText" required>Deskripsi</label>
                 <input type="text" class="form-control" id="descriptionTextInput">
             </div>
             <div class="form-group col-md-8">
@@ -221,6 +221,7 @@
                     "data": JSON.stringify(data)
                 }).done((response) =>{
                     console.log(response)
+                    $("#exampleModal").hide()
                 }).fail((error)=>{
                     console.log(error);
                 })
